@@ -1,6 +1,9 @@
 # Honeygain Bot
 Honeygain Bot opens the honey jar for you without even going on their website. You can login via your access token or your email and password. You can configure the bot to open the honey jar every 24 hours or just once before it shuts itself down. You can set this up on a server and leave it running for as long as you want, I will be running this on a Raspberry PI.
 
+## Warning
+I have contacted someone at Honeygain about this bot, they've informed me to use this program at my own risk. I would not recommend using this bot with your login info, as you can get your account suspended if you use your email and password with this bot too much, access token is preferred. Before using this program, make sure you would be ok with your account getting suspended. Do not hold me accountable for any account bans/suspensions.
+
 ## Access Token
 An access token is a string of letters that is used to perform actions on your account. To get your access token, open developer tools (or inspect element) on a chromium based browser and go to the console tab. Type in `localStorage.getItem('JWT')` into the console and press enter. The console with print your access token.
 
@@ -17,6 +20,3 @@ If you don't want to use the .bat files, you can manually execute the bot with t
  For email and password:
 
     java -jar HoneygainBot.jar [Email] [Password] [Repeat after 24 hours? True/False]
-
-## Warning
-I am unsure whether this is breaking TOS or not. I have sent the staff a message, and I'll edit this as soon as I find out.
