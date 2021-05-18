@@ -45,8 +45,8 @@ public class Main {
         JSONObject data = (JSONObject) ((JSONObject) new JSONParser().parse(sendRequest("https://dashboard.honeygain.com/api/v1/users/me", "GET", null, true))).get("data");
         System.out.println("Successfully logged into " + data.get("email") + " - " + data.get("total_devices") + " devices connected.\n");
 
+        openJar();
         if (repeatRequest) {
-            openJar();
             Calendar c = Calendar.getInstance();
             c.setTimeZone(TimeZone.getTimeZone("GMT"));
             c.add(Calendar.DAY_OF_MONTH, 1);
@@ -61,8 +61,6 @@ public class Main {
                 openJar();
                 Thread.sleep(86401000);
             }
-        } else {
-            openJar();
         }
     }
 
