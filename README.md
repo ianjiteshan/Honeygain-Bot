@@ -1,8 +1,6 @@
 # Honeygain Bot
 Honeygain Bot opens the honey jar for you without even going on their website. You can login via your access token or your email and password. You can configure the bot to open the honey jar at 00:00 GMT or just once before it shuts itself down. The reason it opens at 00:00 GMT is because that is when the Honeygain server resets. You can set this up on a server and leave it running for as long as you want, I will be running this on a Raspberry PI.
 
-[Use My Referral Code](https://r.honeygain.me/SEBBE4D9EB)
-
 ## Warning
 I have contacted someone at Honeygain about this bot, they've informed me to use this program at my own risk. I would not recommend using this bot with your login info, as you can get your account suspended if you use your email and password with this bot too much, access token is preferred. Before using this program, make sure you would be ok with your account getting suspended. Do not hold me accountable for any account bans/suspensions.
 
